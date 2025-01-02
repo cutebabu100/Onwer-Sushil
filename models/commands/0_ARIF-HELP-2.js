@@ -3,7 +3,7 @@ module.exports.config = {
   version: "1.0.2",
   hasPermssion: 0,
   credits: "ARIF BABU",
-  description: "THIS BOT IS MR ARIF BABU",
+  description: "THIS BOT IS MR PRINCE MEGHWANSI",
   usePrefix: true,
   commandCategory: "BOT-ALL-COMMAND-NAME",
   usages: "HELP-2",
@@ -67,9 +67,9 @@ module.exports. run = function({ api, event, args, getText }) {
     for (let item of returnArray) msg += `𒁍  [${++i}] → ${prefix}${item} ♥️ \n`;
 
 
-    const siu = `┏━━━━━┓\n    ARIF-BABU                    ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\n\n✧═══❁♥️TOTAL COMMAND LIST ♥️❁═══✧`;
+    const siu = `┏━━━━━┓\n    PRINCE MEGHWANSI                  ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\n\n✧═══❁♥️TOTAL COMMAND LIST ♥️❁═══✧`;
 
- const text = `PAGE 𒁍  [ ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)} ]\n\nOR COMMAND KE LIYE HAI MENU TYPE KRO\nTHIS BOT IS MADE BYE MR ARIF BABU 🙂✌️\n\n\n\n❁ ═════ ❃ARIF-BABU❃ ═════ ❁`;
+ const text = `PAGE 𒁍  [ ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)} ]\n\nOR COMMAND KE LIYE HAI MENU TYPE KRO\nTHIS BOT IS MADE BYE MR PRINCE MEGHWANSI 🙂✌️\n\n\n\n❁ ═════ ❃PRINCE MEGHWANSI❃ ═════ ❁`;
 
     return api.sendMessage(siu + "\n\n" + msg  + text, threadID, async (error, info) => {
       if (autoUnsend) {
