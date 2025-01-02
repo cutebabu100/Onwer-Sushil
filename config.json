@@ -16,13 +16,13 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "ARIF-BABU",
-    "PREFIX": "#",
+    "BOTNAME": "NADAN HU",
+    "PREFIX": ".",
     "ADMINBOT": [
-        "61553634015672"
+        "100055039334431"
     ],
     "NDH": [
-        "61553634015672"
+        "100055039334431"
     ],
     "DATABASE": {
         "sqlite": {
