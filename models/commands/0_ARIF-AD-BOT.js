@@ -3,7 +3,7 @@ module.exports.config = {
     version: "1.0.0",
     hasPermssion: 0,
     credits: "ARIF BABU",
-    description: "MADE BY ARIF BABU",
+    description: "MADE BY PRINCE MEGHWANSI",
     commandCategory: "info",
     usages: "",
     cooldowns: 4,
@@ -61,8 +61,8 @@ module.exports.run = async({api,event,args}) => {
     if (args[0] == "admin") {
       var callback = () => api.sendMessage(
   {body:`┄┅══❁ADMIN BOT❁══┅┄
-   [1] NAME: 𒁍 ARIF BABU 
-   [2] Facebook: 𒁍 https://www.facebook.com/profile.php?id=61553634015672&mibextid=kFxxJD
+   [1] NAME: 𒁍 PRINCE MEGHWANSI 
+   [2] Facebook: 𒁍 https://www.facebook.com/profile.php?id=100092324977131
    [3] Thanks for using 𒁍 ${global.config.BOTNAME} bot`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
