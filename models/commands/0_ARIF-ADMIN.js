@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.5",
 	hasPermssion: 0, 
 	credits: "ARIF BABU",
-	description: "MADE BY ARIF BABU",
+	description: "MADE BY PRINCE MEGHWANSI",
 	commandCategory: "config",
 	usages: "[list/add/remove] [userID]",
     cooldowns: 5,
