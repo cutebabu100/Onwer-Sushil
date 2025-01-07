@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if (event.body.indexOf("Daru")==0 || event.body.indexOf("daru")==0 || event.body.indexOf("Drink")==0 || event.body.indexOf("drink")==0) {
 		var msg = {
 				body: "Aajao milke pite hai 🍻🍷🍺",
-				attachment: fs.createReadStream(__dirname + `/noprefix/daru.mp4`)
+				attachment: fs.createReadStream(__dirname + `/noprefix/rankup/daru.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🍺", event.messageID, (err) => {}, true)
