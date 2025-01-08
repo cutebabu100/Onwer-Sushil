@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   if (event.body.indexOf("Arif")==0 || event.body.indexOf("arif")==0 || event.body.indexOf("Prince babu")==0 || event.body.indexOf("PRINCE")==0) {
     var msg = {
         body: "मुझे मेरे प्रिंस बाबू बॉस ने बनाया है 😐",
-        attachment: fs.createReadStream(__dirname + `/PRINCE-BABU/dk.mp3`)
+        attachment: fs.createReadStream(__dirname + `/ARIF-BABU/dk.mp3`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😘", event.messageID, (err) => {}, true)
