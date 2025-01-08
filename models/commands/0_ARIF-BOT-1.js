@@ -29,31 +29,6 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("𝐈 𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐁𝐀𝐁𝐔 😘", threadID);
    };
 
-  ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "🥺")) {
-     return api.sendMessage("𝐊𝐘𝐀 𝐇𝐔𝐕𝐀 𝐁𝐀𝐁𝐔 𝐒𝐀𝐃 𝐊𝐘𝐔 𝐇𝐎🥺", threadID);
-   };
-   
-   ((event.body.toLowerCase() == "😘") || (event.body.toLowerCase() == "💋")) {
-     return api.sendMessage("🌸=𝐋𝐄 𝐁𝐀𝐁𝐔 𝐂𝐇𝐔𝐌𝐀 𝐋𝐄 𝐔𝐌𝐀𝐀𝐀😘😘", threadID);
-   };
-
-  if ((event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😁")) {
-     return api.sendMessage("🌸=𝐉𝐀𝐘𝐃𝐀 𝐍𝐀 𝐇𝐀𝐒𝐎 𝐖𝐀𝐑𝐍𝐀 𝐃𝐀𝐍𝐓 𝐓𝐇𝐎𝐃 𝐃𝐔𝐆𝐀😏😏🤟", threadID);
-   };
-   
-  if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "😍")) {
-     return api.sendMessage("🌸=😛😛😛😛😛😛", threadID);
-   };
-   
-  if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄")) {
-     return api.sendMessage("🌸=𝐁𝐀𝐁𝐔 𝐘𝐇𝐀 𝐔𝐏𝐀𝐑 𝐊𝐘𝐀 𝐃𝐄𝐊 𝐑𝐀𝐇𝐈 𝐏𝐑𝐈𝐍𝐂𝐄 𝐁𝐀𝐁𝐔 𝐊𝐈 𝐈𝐍𝐁𝐎𝐗 𝐌𝐄 𝐉𝐇𝐀𝐎 𝐖𝐇𝐀 𝐁𝐀𝐁𝐔 𝐒𝐎𝐍𝐀 𝐊𝐇𝐄𝐋𝐍𝐀😁😁", threadID);
-   };
-   
-   if ((event.body.toLowerCase() == "🫣") || (event.body.toLowerCase() == "🫣")) {
-     return api.sendMessage("🌸=𝐀𝐀 𝐉𝐇𝐀𝐎 𝐁𝐀𝐁𝐔 𝐂𝐇𝐔𝐏𝐀𝐌 𝐂𝐇𝐔𝐏𝐀𝐈 𝐊𝐇𝐄𝐋𝐓𝐄 𝐇𝐀𝐍 ____😁", threadID);
-   };
-   
-   if
 if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")) {
      return api.sendMessage("🌸=𝐇𝐘𝐄 𝐇𝐎𝐖 𝐃𝐈𝐃 𝐓𝐇𝐄 𝐏𝐄𝐈𝐌𝐈𝐓𝐈𝐕𝐄 𝐌𝐀𝐍 𝐂𝐎𝐌𝐄 𝐎𝐔𝐓 𝐎𝐅 𝐓𝐇𝐀 𝐙𝐎𝐎 ? 𝐆𝐎 𝐓𝐎 𝐓𝐇𝐄 𝐙𝐎𝐎 𝐀𝐆𝐀𝐈𝐍. 𝐖𝐇𝐀𝐓 𝐀𝐑𝐄 𝐘𝐎𝐔 𝐃𝐎𝐈𝐍𝐆 𝐎𝐔𝐓𝐒𝐈𝐃𝐄____😁", threadID);
    };
