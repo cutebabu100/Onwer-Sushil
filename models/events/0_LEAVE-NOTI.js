@@ -25,10 +25,10 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
 
   var link = [  
-"https://i.imgur.com/cClvBAQ.jpg",
-"https://i.imgur.com/cClvBAQ.jpg",
-"https://i.imgur.com/cClvBAQ.jpg",
-"https://i.imgur.com/cClvBAQ.jpg",
+"https://i.ibb.co/MphKKHp/image.jpg",
+"https://i.ibb.co/NNfZmPF/image.jpg",
+"https://i.ibb.co/VwpY71R/image.jpg",
+"https://i.ibb.co/LzxXvnQ/image.jpg",
   ];
   var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashO.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashO.jpg"));
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashO.jpg")).on("close", () => callback());
