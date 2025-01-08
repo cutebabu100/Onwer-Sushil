@@ -3,7 +3,7 @@ module.exports.config = {
     version: "1.0.0",
     hasPermssion: 2,
     credits: "ARIF BABU",
-    description: "THIS BOT WAS MADE BY MR ARIF BABU",
+    description: "THIS BOT WAS MADE BY MR PRINCE MEGHWANSI",
     commandCategory: "BOT ID OUT OF THE GROUP",
     usages: "PREFIX",
     cooldowns: 10,
