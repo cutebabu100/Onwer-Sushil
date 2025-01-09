@@ -14,7 +14,7 @@ module.exports.run = async function({ api, event }) {
   const { threadID } = event;
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`${global.config.BOTNAME} 【 ${global.config.PREFIX} 】`, threadID, api.getCurrentUserID());
-    return api.sendMessage(`┏━━━━━━┓\n    PRINCE MEGHWANSI                   ♥️┄┅══❁🙂❁══┅┄♥️\n┗━━━━━━┛\n♥️✧═════════•❁❀❁•═════════✧♥️\n\n𒁍 [ BOT OWNER ]  →     ♥️ PRINCE-BABU ♥️\n𒁍 [  NOTICE ] →KOI BOT KO GALI NHI DEGA AGAR KISI NA BINA FALTU KI GALI DIYA TO USKI ID BAND KAR DIYA JAYEGA\n𒁍 [ USER NOTICE ] → BOT KO BAR BAR ADD OR REMOVE NA KARO NAHI TO AAP KA GROUP BAN KIYA JAEGA 🙂✋\n𒁍 [ COMMANDS ]  →     #help \n\nTHIS BOT CREATER IS PRINCE BABU\n\n𒁍 [ PREFIX ] →      # \n𒁍 [ FACEBOOK ID ] → https://www.facebook.com/profile.php?id=100092324977131\n𒁍 [ OWNER ] →  MR PRINCE MEGHWANSI\n𒁍 [ APPROVAL ] →   #request`, threadID);
+    return api.sendMessage(`┏━━━━━━┓\n    PRINCE MEGHWANSI                   ♥️┄┅══❁🙂❁══┅┄♥️\n┗━━━━━━┛\n♥️✧═════════•❁❀❁•═════════✧♥️\n\n𒁍 [ BOT OWNER ]  →     ♥️ PRINCE-BABU ♥️\n𒁍 [  NOTICE ] →KOI BOT KO GALI NHI DEGA AGAR KISI NA BINA FALTU KI GALI DIYA TO USKI ID BAND KAR DIYA JAYEGA\n𒁍 [ USER NOTICE ] → BOT KO BAR BAR ADD OR REMOVE NA KARO NAHI TO AAP KA GROUP BAN KIYA JAEGA 🙂✋\n𒁍 [ COMMANDS ]  →     #help \n\nTHIS BOT CREATER IS PRINCE MEGHWANSI\n\n𒁍 [ PREFIX ] →      # \n𒁍 [ FACEBOOK ID ] → https://www.facebook.com/profile.php?id=100092324977131\n𒁍 [ OWNER ] →  MR PRINCE MEGHWANSI\n𒁍 [ APPROVAL ] →   #request`, threadID);
     }
   else {
     try {
@@ -48,10 +48,10 @@ memLength.sort((a, b) => a - b);
       .replace(/\{threadName}/g, threadName);			
 
       var link = [
-"https://i.imgur.com/AI8zow3.jpg",
-"https://i.imgur.com/0grK57V.jpg",
-"https://i.imgur.com/AI8zow3.jpg",
-"https://i.imgur.com/0grK57V.jpg",
+"https://i.ibb.co/NNfZmPF/image.jpg",
+"https://i.ibb.co/MphKKHp/image.jpg",
+"https://i.ibb.co/VwpY71R/image.jpg",
+"https://i.ibb.co/LzxXvnQ/image.jpg",
      ];
         var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.jpg"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.jpg"));
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.jpg")).on("close", () => callback());       
