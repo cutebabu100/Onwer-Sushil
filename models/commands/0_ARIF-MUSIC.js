@@ -10,7 +10,7 @@ module.exports = {
     version: "1.0.0",
     hasPermssion: 0,
     credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-    description: "Download youtube song from keyword search and link",
+    description: "Play music via YouTube link, SoundCloud or search keyword",
     commandCategory: "Media",
     usages: "[songName] [type]",
     cooldowns: 5,
