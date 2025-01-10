@@ -186,7 +186,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
    mess = "{name}"
   
-  if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("Bot") == 0)) {
+  if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
       body: `𖤇𓆩⃝⟶͇̽${name}⟶͇̽🪽  
       
