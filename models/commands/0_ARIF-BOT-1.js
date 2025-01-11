@@ -81,7 +81,7 @@ if ((event.body.toLowerCase() == "chumma de") || (event.body.toLowerCase() == "B
    };
 
    if ((event.body.toLowerCase() == "bot hume kon banaya") || (event.body.toLowerCase() == "tume kis ne banaya hai")) {
-     return api.sendMessage("🌸=प्रिंस बाबू ne.", threadID);
+     return api.sendMessage("🌸=प्रिंस मेघवंशी ne.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon hai")) {
@@ -166,15 +166,15 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "does the bot love you") || (event.body.toLowerCase() == "does the bot love you")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰प्रिंस बाबू❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰प्रिंस मेघवंशी❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
    };
 
    if ((event.body.toLowerCase() == "bot go to sleep") || (event.body.toLowerCase() == "bot goes to sleep")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛प्रिंस ❤️बाबू❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛प्रिंस ❤️मेघवंशी❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
    };
 
-   if ((event.body.toLowerCase() == "+") || (event.body.toLowerCase() == "/")) {
-     return api.sendMessage("मेरी जान पहले # लगाओ", threadID);
+   if ((event.body.toLowerCase() == "+") || (event.body.toLowerCase() == "#")) {
+     return api.sendMessage("मेरी जान पहले . लगाओ", threadID);
    };
 
    if ((event.body.toLowerCase() == "😶😶") || (event.body.toLowerCase() == "😶")) {
@@ -203,7 +203,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
       ${rand}
       
       
-      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ℙℝ𝕀ℕℂ𝔼 𝕄𝔼𝔾ℍ𝕎𝔸ℕ𝕊𝕀『٭』`
+      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ☞ ▄︻デP̷R̷I̷N̷C̷E̷ ̷M̷E̷G̷H̷W̷A̷N̷S̷I̷══━一 ☜『٭』`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
