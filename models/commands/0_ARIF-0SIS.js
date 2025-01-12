@@ -5,7 +5,7 @@ module.exports.config = {
     credits: " Priyansh Rajput", 
     description: "Get Pair From Mention",
     commandCategory: "png",
-    usages: "[@mention]",
+    usages: "[sis]",
     cooldowns: 5, 
     dependencies: {
         "axios": "",
