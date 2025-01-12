@@ -29,10 +29,10 @@ module.exports.run = async function({ api, event }) {
 	const { join } = global.nodemodule["path"];
 	const { threadID } = event;
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-		api.changeNickname(`{ ${global.config.PREFIX} } Ã— ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+		api.changeNickname(`{ ${global.config.PREFIX} } × ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 		const fs = require("fs");
-		return api.sendMessage("Hello EveryoneðŸ™‹â€â™‚ï¸ ðð¨ð­ ð¢ð¬ ðð¨ð° ð‚ð¨ð§ð§ðžðœð­ðžðâ›“ï¸", event.threadID, () => api.sendMessage({body:`ðŸŒºðŸ¦‹ðŸŒº 
-ðð¨ð­ Made By ðð‘ðˆðð‚ð„ ðŒð„ð†ð‡ð–ð€ðð’ðˆâ˜˜ï¸
+		return api.sendMessage("Hello Everyone🙋‍♂️ 𝐁𝐨𝐭 𝐢𝐬 𝐍𝐨𝐰 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝⛓️", event.threadID, () => api.sendMessage({body:`🌺🦋🌺 
+𝐁𝐨𝐭 Made By 𝐏𝐑𝐈𝐍𝐂𝐄 𝐌𝐄𝐆𝐇𝐖𝐀𝐍𝐒𝐈☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -42,7 +42,7 @@ APPROVAL ALLOW IN THIS GROUP!!!
 USE HELP TO SEE COMMAND 
 \n\nUse ${global.config.PREFIX}help to see commands.\n\nexample :\n${global.config.PREFIX}video , +video2 , +video3 (video songs)\n${global.config.PREFIX}music +song +sing (audio songs)\n${global.config.PREFIX}help2 (command list)\n${global.config.PREFIX}info 
 <<<<<------------------------------>>>>>
-AND FOR ANY REPORT OR CONTACT BOT DEVELOPEð« `, attachment: fs.createReadStream(__dirname + "/cache/joinmp4/intro.mp4")} ,threadID));
+AND FOR ANY REPORT OR CONTACT BOT DEVELOPE𝐫 `, attachment: fs.createReadStream(__dirname + "/cache/joinmp4/intro.mp4")} ,threadID));
 	}
 	else {
 		try {
@@ -63,7 +63,7 @@ AND FOR ANY REPORT OR CONTACT BOT DEVELOPEð« `, attachment: fs.createReadS
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = " \nâœ¨ðŸ††ðŸ…´ðŸ…»ðŸ…» ðŸ…²ðŸ…¾ðŸ…¼ðŸ…´âœ¨\n\n                 â¥ðð„ð–~\n\n        ~ðŸ‡²â€ŒðŸ‡ªâ€ŒðŸ‡²â€ŒðŸ‡§â€ŒðŸ‡ªâ€ŒðŸ‡·â€Œ~\n\n    [   {name} ]\n\nà¼„âœºà¿\n\n{threadName}\n\n ðŸ¥°ðŸ–¤ðŸŒ¸ð—›ð—®ð—½ð—½ð˜†ðŸ€ð—˜ð—»ð—·ð—¼ð˜†ðŸ€â€”ðŸŒ¸ðŸ¥€\n\n         ðŸ¥€ð— ð—®ð—·ð—² ð—žð—®ð—¿ð—¼ðŸ¥€\n\nà¼„âœºð—¢ð—¿ ð—§ð˜‚ð—º ð—œð˜€ ð—šð—¿ð—¼ð˜‚ð—½ ð—žð—² {soThanhVien} ð— ð—²ð—ºð—¯ð—²ð—¿ ð—›ð—¼ ð—˜ð—»ð—·ð—¼ð˜† ð—žð—®ð—¿ð—¼ ð— ð—®ð—·ð—² ð—Ÿð—¼ [ # ]à¿\n\n    â•”â•¦â•â•â€¢    â€¢âœ â€¢â€â€¢âœ  â€¢   â€¢â•â•â•¦â•—\n     â™¥  â•â•©â•" : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = " \n✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n                 ❥𝐍𝐄𝐖~\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n    [   {name} ]\n\n༄✺࿐\n\n{threadName}\n\n 🥰🖤🌸𝗛𝗮𝗽𝗽𝘆🍀𝗘𝗻𝗷𝗼𝘆🍀—🌸🥀\n\n         🥀𝗠𝗮𝗷𝗲 𝗞𝗮𝗿𝗼🥀\n\n༄✺𝗢𝗿 𝗧𝘂𝗺 𝗜𝘀 𝗚𝗿𝗼𝘂𝗽 𝗞𝗲 {soThanhVien} 𝗠𝗲𝗺𝗯𝗲𝗿 𝗛𝗼 𝗘𝗻𝗷𝗼𝘆 𝗞𝗮𝗿𝗼 𝗠𝗮𝗷𝗲 𝗟𝗼 [ # ]࿐\n\n    ╔╦══•    •✠•❀•✠ •   •══╦╗\n     ♥  ═╩╝" : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'You' : 'Friend')
