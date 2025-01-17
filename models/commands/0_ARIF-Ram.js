@@ -16,7 +16,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
     var msg = {
         body: "जय श्री राम _🚩🚩🚩🙏",
         attachment: 
-fs.createReadStream(__dirname + `/noprefix/ram.mp4`)
+fs.createReadStream(__dirname + `/noprefix/rankup/ram.mp4`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🚩", event.messageID, (err) => {}, true)
