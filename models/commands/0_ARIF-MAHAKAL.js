@@ -18,7 +18,7 @@ react.includes("Jai shree mahakal") ||
 react.includes("shiv")) {
 		var msg = {
 				body: `【  HAR HAR MAHADEV🙏🙏😍_________________❤️🙏  】`,attachment: 
-fs.createReadStream(__dirname + `/noprefix/mahadev.mp3`)
+fs.createReadStream(__dirname + `/noprefix/rankup/mahadev.mp3`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙏", event.messageID, (err) => {}, true)
