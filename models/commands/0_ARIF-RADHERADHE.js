@@ -18,7 +18,7 @@ react.includes("jay shri krishna") ||
 react.includes("krishna")) {
 		var msg = {
 				body: `【  राधे _राधे _________❤️🙏  】`,attachment: 
-fs.createReadStream(__dirname + `/noprefix/radhe.mp3`)
+fs.createReadStream(__dirname + `/noprefix/rankup/radhe.mp3`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙏", event.messageID, (err) => {}, true)
