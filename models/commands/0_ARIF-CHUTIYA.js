@@ -13,7 +13,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("chutiya") ||
-     react.includes("Chutiya") || react.includes("CHUTIYA") || react.includes("Bot tu chutiye") ||
+     react.includes("Chutiya") || react.includes("CHUTIYA") || react.includes("Chutiye") ||
 react.includes("Chutiye") ||
 react.includes("CHUTIYE")) {
     var msg = {
