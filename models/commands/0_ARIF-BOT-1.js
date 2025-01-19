@@ -97,7 +97,7 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
      return api.sendMessage("आर ये सब मत भेजा करो मेरा सर दर्द होता है। 🤕🤕👈", threadID);
    };
    
-  if ((event.body.toLowerCase() == "Ludo khele") || (event.body.toLowerCase() == "LUDO  link do") || (event.body.toLowerCase() == "Koi ludo khelega kya") || (event.body.toLowerCase() == "ludo link")) {
+  if ((event.body.toLowerCase() == "ludo khele") || (event.body.toLowerCase() == "ludo link do") || (event.body.toLowerCase() == "Koi ludo khelega kya") || (event.body.toLowerCase() == "ludo link")) {
      return api.sendMessage("मुझे लूडो खेलना नही आता 🥺👈", threadID);
    };
    
