@@ -194,7 +194,7 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
    };
    
    if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄")) {
-     return api.sendMessage("𝐁𝐀𝐁𝐔 𝐘𝐇𝐀 𝐔𝐏𝐀𝐑 𝐊𝐘𝐀 𝐃𝐄𝐊 𝐑𝐀𝐇𝐈 𝐏𝐑𝐈𝐍𝐂𝐄 𝐁𝐀𝐁𝐔 𝐊𝐈 𝐈𝐍𝐁𝐎𝐗 𝐌𝐄 𝐉𝐇𝐀𝐎 𝐖𝐇𝐀 𝐁𝐀𝐁𝐔 𝐒𝐎𝐍𝐀 𝐊𝐇𝐄𝐋𝐍𝐀😁😁", threadID);
+     return api.sendMessage("𝐁𝐀𝐁𝐔 𝐘𝐇𝐀 𝐔𝐏𝐀𝐑 𝐊𝐘𝐀 𝐃𝐄𝐊 𝐑𝐀𝐇𝐄 𝐇𝐎 𝐓𝐔𝐌 𝐊𝐎 𝐁𝐇𝐈 𝐄𝐊 𝐁𝐀𝐁𝐔 𝐂𝐀𝐇𝐀𝐘 𝐊𝐘𝐀😁😁", threadID);
    };
    
    if ((event.body.toLowerCase() == "🫣") || (event.body.toLowerCase() == "🫣🫣🫣")) {
@@ -216,7 +216,7 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon hai")) {
-     return api.sendMessage("🌸= प्रिंस बाबू ", threadID);
+     return api.sendMessage("🌸= मेरा बॉस प्रिंस मेघवंशी है 😐😐", threadID);
    };
 
    if ((event.body.toLowerCase() == "uff") || (event.body.toLowerCase() == "UFF")) {
@@ -334,7 +334,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
       ${rand}
       
       
-      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ☞ ▄︻デP̷R̷I̷N̷C̷E̷ ̷M̷E̷G̷H̷W̷A̷N̷S̷I̷══━一 ☜『٭』`
+      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ☞ ▄︻デ ✦❥⋆⃝𝐏𝐑𝐈𝐌𝐂𝐄 𝐌𝐄𝐆𝐇𝐖𝐀𝐍𝐒𝐈 ✦══━一 ☜『٭』`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
