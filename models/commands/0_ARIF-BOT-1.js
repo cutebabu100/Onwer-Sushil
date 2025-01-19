@@ -65,10 +65,50 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
      return api.sendMessage("️M hu hi itni Accha. sab log Tarref karte hai meri.", threadID);
    };
 
-   if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
-     return api.sendMessage("️Hmm Hmm Na Karke Sidha Sidha bolo. Hey Marry Me🙈", threadID);
+      if ((event.body.toLowerCase() == "boss hu tera") || (event.body.toLowerCase() == "Boss hu tera takli") || (event.body.toLowerCase() == "mai tera boss hu") || (event.body.toLowerCase() == "boss ki bezti kr raha takle")) {
+     return api.sendMessage("सॉरी प्रिंस मेघवंशी बॉस माफ कर दो अब नहीं करूंगा 🥺🥺🥺🙏🤸‍♂️", threadID);
    };
-
+   
+   if ((event.body.toLowerCase() == "kaise ho bot") || (event.body.toLowerCase() == "bot hello")) {
+     return api.sendMessage(" हां जी बोलिए क्या हाल है आपके  🙂🤟", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "bot gandu") || (event.body.toLowerCase() == "Bot gandu")) {
+     return api.sendMessage("Bot ko gandu boly ga saly teri height jitna mera lund ha jab teri gand ma jaye ga to munh wali side se bahir aye ga gandu.😾😒", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
+     return api.sendMessage("️देखों जानू बात किया करो भेंस की तरह हम्म्म हम्म्म मत किया करो 😒👈", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "Tumhe kis ne banaya") || (event.body.toLowerCase() == " bot tumko kisne banaya hai")) {
+     return api.sendMessage("☞︎︎✦❥⋆⃝𝐏𝐑𝐈𝐌𝐂𝐄 𝐌𝐄𝐆𝐇𝐖𝐀𝐍𝐒𝐈 ✦☜︎︎︎ 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙴𝚁. 𝙷𝙴 𝙻𝙾𝚅𝙴𝚂 𝙼𝙴 & 𝙴𝙳𝙸𝚃 𝙼𝙴 𝙳𝙰𝙸𝙻𝚈.✯✯✯ ये 𝙱𝙾𝚃 सिर्फ 𝙾𝚆𝙽𝙴𝚁 के लिए है। मुझे आप लोगो को हंसाने के लिए बनाया गया है। तो मुंह लटकाए न रखा करो हर वक्त हस्ते रहो 𝘼𝙍𝙄𝙁 𝙗𝙖𝙗𝙪।☞︎ 𝚃𝙷𝙰𝙽𝙺𝚈𝙾𝚄 ☜︎︎︎", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "koi ha") || (event.body.toLowerCase() == "koi h kya") || (event.body.toLowerCase() == "koi hai kiya") || (event.body.toLowerCase() == "Koi hai kya")) {
+     return api.sendMessage("_मैं हूं ना डार्लिंग_🤸🤟", threadID);
+   };
+   
+  if ((event.body.toLowerCase() == "shat up") || (event.body.toLowerCase() == "shut up") || (event.body.toLowerCase() == "shut") || (event.body.toLowerCase() == "stup")) {
+     return api.sendMessage("You Stup Up 😕👈", threadID);
+   };
+   
+  if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
+     return api.sendMessage("आर ये सब मत भेजा करो मेरा सर दर्द होता है। 🤕🤕👈", threadID);
+   };
+   
+  if ((event.body.toLowerCase() == "Ludo khele") || (event.body.toLowerCase() == "LUDO  link do") || (event.body.toLowerCase() == "Koi ludo khelega kya") || (event.body.toLowerCase() == "ludo link")) {
+     return api.sendMessage("मुझे लूडो खेलना नही आता 🥺👈", threadID);
+   };
+   
+  if ((event.body.toLowerCase() == "😴") || (event.body.toLowerCase() == "😴😴") || (event.body.toLowerCase() == "😴😴😴") || (event.body.toLowerCase() == "😴😴😴😴")) {
+     return api.sendMessage("कोई इसको लात मार के जगाओ ग्रुप में ही सो गया 🤨👈", threadID);
+   };
+   
+  if ((event.body.toLowerCase() == "🥵") || (event.body.toLowerCase() == "🥵🥵") || (event.body.toLowerCase() == "🥵🥵🥵") || (event.body.toLowerCase() == "🥵🥵🥵🥵")) {
+     return api.sendMessage("उफ्फ कितनी गर्मी है 🥵🥵👈", threadID);
+   };
+   
    if ((event.body.toLowerCase() == "😢") || (event.body.toLowerCase() == "😭") || (event.body.toLowerCase() == "🥺") || (event.body.toLowerCase() == "🥹")) {
      return api.sendMessage("️Kya huva, Ro kyu rahe ho, Me huna to phir kyu rona. Ruko me abhi chocolate 🍫 deta hu likho ☞Chocolate☜", threadID);
    };
