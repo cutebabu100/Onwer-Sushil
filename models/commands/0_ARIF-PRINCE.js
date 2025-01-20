@@ -22,7 +22,7 @@ module.exports.handleEvent = async function({ api , event , Users }) {
   const tpkk = moment.tz("Asia/Kolkata").format("DD/MM/YYYY || HH:mm:ss");
   const fs = require("fs");
     try {
-        if (body === undefined || !(body.includes('prince') ||body.includes('PRINCE')||body.includes('chiku')||body.includes('chiku')||body.includes('@Th'Əw Cʜɩĸʋ ßwßīīe Pīī'ew'))|| senderID == api.getCurrentUserID() || senderID == 'Chiku') return;
+        if (body === undefined || !(body.includes('prince') ||body.includes('prince')||body.includes('nadan')||body.includes('nadan')||body.includes('@Th'Əw Cʜɩĸʋ ßwßīīe Pīī'ew'))|| senderID == api.getCurrentUserID() || senderID == 'prince') return;
         const userName = await Users.getNameUser(senderID);
         const { threadName } = await api.getThreadInfo(threadID);
         api.sendMessage(`👉 ${userName} sends you a message ⚡⚡ ${tpkk} ⚡⚡ ${threadName}
