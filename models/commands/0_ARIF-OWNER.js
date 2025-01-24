@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("OWNER")) {
     var msg = {
   body: "┏━━━━━┓\n     ✦❥⋆⃝𝗣𝗥𝗜𝗡𝗖𝗘 𝗠𝗘𝗚𝗛𝗪𝗔𝗡𝗦𝗜 ✦             ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\n ✦ 𝐎𝐖𝐍𝐄𝐑 ✦❥⋆⃝𝗣𝗥𝗜𝗡𝗖𝗘 𝗠𝗘𝗚𝗛𝗪𝗔𝗡𝗦𝗜 ✦",
-        attachment: fs.createReadStream(__dirname + `/ARIF-BABU/PRINCE.mp4`)
+        attachment: fs.createReadStream(__dirname + `/ARIF-BABU/PRINCE.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("📷", event.messageID, (err) => {}, true)
