@@ -2,7 +2,7 @@ module.exports.config = {
   name: "ADMIN-ONLY",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "PRINCE BABU",
+  credits: "SONAM",
   description: "THIS BOT IS MR PRINCE MEGHWANSI",
   commandCategory: "ADMIN-BOT-REPLY-MESSAGE",
   usages: "MENTION-BOT-ADMIN",
