@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "SONAM-DP",
+  name: "SONAM-2",
     version: "1.0.1",
   hasPermssion: 0,
   credits: "FAIZ ANSARI", 
@@ -11,6 +11,7 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+  var { threadID, messageID } = event;
   if (event.body.indexOf("@S M Singh")==0 || event.body.indexOf("@Sonam Singh")==0 || event.body.indexOf("Sm")==0 || event.body.indexOf("Sm singh")==0) {
     var msg = {
         body: "❤️𝐃𝐄𝐊𝐇𝐎 𝐌𝐄𝐑𝐈 𝐁𝐎𝐒𝐒 𝐒 𝐌 𝐒𝐈𝐍𝐆𝐇 𝐀𝐀 𝐆𝐀𝐘 🙈 😎 𓆩♡𓆪🙈",
