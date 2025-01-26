@@ -1,9 +1,9 @@
 module.exports.config = {
-  name: "ADMIN-ONLY",
+  name: "SONAM",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "SONAM",
-  description: "THIS BOT IS MR PRINCE MEGHWANSI",
+  credits: "फैज",
+  description: "THIS BOT IS MR PREM SHARMA",
   commandCategory: "ADMIN-BOT-REPLY-MESSAGE",
   usages: "MENTION-BOT-ADMIN",
   cooldowns: 1
