@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "PRINCE BABU",
   description: "THIS BOT IS MR PRINCE MEGHWANSI",
   commandCategory: "ADMIN-BOT-REPLY-MESSAGE",
-  usages: "@MENTION",
+  usages: "MENTION-BOT-ADMIN",
   cooldowns: 1
 };
 module.exports.handleEvent = function({ api, event }) {
