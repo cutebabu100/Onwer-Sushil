@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
 	description: "Permanently ban members from the group (Remember to set the qtv bot)\nAuthor: 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
 	commandCategory: "group",
-	usages: "userban",
+	usages: "[key]",
 	cooldowns: 5,
 	info: [
 		{
