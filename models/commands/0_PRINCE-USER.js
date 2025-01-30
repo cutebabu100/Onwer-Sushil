@@ -2,40 +2,15 @@ module.exports.config = {
 	name: "user",
 	version: "1.0.5",
 	hasPermssion: 2,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "Mirai Team",
 	description: "Ban or unblock users",
-	commandCategory: "system",
+  usePrefix: true,
+	commandCategory: "Admin",
 	usages: "[unban/ban/search] [ID or text]",
 	cooldowns: 5
 };
 
 module.exports.languages = {
-	"vi": {
-		"reason": "Lý do",
-		"at": "vào lúc",
-		"allCommand": "toàn bộ lệnh",
-		"commandList": "những lệnh",
-		"banSuccess": "[ Ban User ] Đã xử lý thành công yêu cầu cấm người dùng: %1",
-		"unbanSuccess": "[ Unban User ] Đã xử lý thành công yêu cầu gỡ cấm người dùng %1",
-		"banCommandSuccess": "[ banCommand User ] Đã xử lý thành công yêu cầu cấm lệnh đối với người dùng: %1",
-		"unbanCommandSuccess": "[ UnbanCommand User ] Đã xử lý thành công yêu cầu gỡ cấm %1 đối với người dùng: %2",
-		"errorReponse": "%1 Không thể hoàn tất công việc bạn yêu cầu",
-		"IDNotFound": "%1 ID người dùng bạn nhập không tồn tại trong cơ sở dữ liệu",
-		"existBan": "[ Ban User ] Người dùng %1 đã bị ban từ trước %2 %3",
-		"notExistBan": "[ Unban User ] Người dùng bạn nhập chưa từng bị cấm sử dụng bot",
-		"missingCommandInput": "%1 Phần command cần cấm không được để trống!",
-		"notExistBanCommand": "[ UnbanCommand User ] Hiện tại ID người dùng bạn nhập chưa từng bị cấm sử dụng lệnh",
-
-		"returnBan": "[ Ban User ] Hiện tại bạn đang yêu cầu cấm người dùng:\n- ID và tên người dùng cần cấm: %1%2\n\n❮ Reaction tin nhắn này để xác thực ❯",
-		"returnUnban": "[ Unban User ] Hiện tại bạn đang yêu cầu gỡ cấm người dùng:\n- ID và tên người dùng cần gỡ cấm: %1\n\n❮ Reaction tin nhắn này để xác thực ❯",
-		"returnBanCommand": "[ banCommand User ] Hiện tại bạn đang yêu cầu cấm sử dụng lệnh đối với người dùng:\n - ID và tên người dùng cần cấm: %1\n- Các lệnh cần cấm: %2\n\n❮ Reaction tin nhắn này để xác thực ❯",
-		"returnUnbanCommand": "[ UnbanCommand User ] Hiện tại bạn đang yêu cầu gỡ cấm sử dụng lệnh đối với với người dùng:\n - ID và tên người dùng cần gỡ cấm lệnh: %1\n- Các lệnh cần gỡ cấm: %2\n\n❮ Reaction tin nhắn này để xác thực ❯",
-	
-		"returnResult": "Đây là kết quả phù hợp: \n",
-		"returnNull": "Không tìm thấy kết quả dựa vào tìm kiếm của bạn!",
-		"returnList": "[ User List ]\nHiện tại đang có %1 người dùng bị ban, dưới đây là %2 người dùng\n\n%3",
-		"returnInfo": "[ Info User ] Đây là một sô thông tin về người dùng bạn cần tìm:\n- ID và tên của người dùng: %1n- Có bị ban?: %2 %3 %4\n- Bị ban lệnh?: %5"
-	},
 	"en": {
 		"reason": "Reason",
 		"at": "At",
@@ -56,7 +31,6 @@ module.exports.languages = {
 		"returnUnban": "[ Unban User ] You are requesting to unban user:\n- User ID and name who you want to ban: %1\n\n❮ Reaction this message to complete ❯",
 		"returnBanCommand": "[ banCommand User ] You are requesting to ban command with user:\n - User ID and name who you want to ban: %1\n- Commands: %2\n\n❮ Reaction this message to complete ❯",
 		"returnUnbanCommand": "[ UnbanCommand User ] You are requesting to unban command with user:\n - User ID and name: %1\n- Commands: %2\n\n❮ Reaction this message to complete ❯",
-	
 		"returnResult": "This is your result: \n",
 		"returnNull": "There is no result with your input!",
 		"returnList": "[ User List ]\There are %1 banned user, here are %2 user\n\n%3",
@@ -70,12 +44,13 @@ module.exports.handleReaction = async ({ event, api, Users, handleReaction, getT
 	const { threadID } = event;
 	const { messageID, type, targetID, reason, commandNeedBan, nameTarget } = handleReaction;
 	
-	const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
+	const time = moment.tz("Asia/Manila").format("HH:MM:ss L");
 	global.client.handleReaction.splice(global.client.handleReaction.findIndex(item => item.messageID == messageID), 1);
 	
 	switch (type) {
 		case "ban": {
 			try {
+				if(event.type == "message_reply") { targetID = event.messageReply.senderID }
 				let data = (await Users.getData(targetID)).data || {};
 				data.banned = true;
 				data.reason = reason || null;
@@ -90,6 +65,7 @@ module.exports.handleReaction = async ({ event, api, Users, handleReaction, getT
 
 		case "unban": {
 			try {
+				if(event.type == "message_reply") { targetID = event.messageReply.senderID }
 				let data = (await Users.getData(targetID)).data || {};
 				data.banned = false;
 				data.reason = null;
@@ -145,6 +121,7 @@ module.exports.run = async ({ event, api, args, Users, getText }) => {
 	switch (type) {
 		case "ban":
 		case "-b": {
+			if(event.type == "message_reply") { targetID = event.messageReply.senderID }
 			if (!global.data.allUserID.includes(targetID)) return api.sendMessage(getText("IDNotFound", "[ Ban User ]"), threadID, messageID);
 			if (global.data.userBanned.has(targetID)) {
 				const { reason, dateAdded } = global.data.userBanned.get(targetID) || {};
@@ -167,6 +144,7 @@ module.exports.run = async ({ event, api, args, Users, getText }) => {
 
 		case "unban":
 		case "-ub": {
+			if(event.type == "message_reply") { targetID = event.messageReply.senderID }
 			if (!global.data.allUserID.includes(targetID)) return api.sendMessage(getText("IDNotFound", "[ Unban User ]"), threadID, messageID);
 			if (!global.data.userBanned.has(targetID)) return api.sendMessage(getText("notExistBan"), threadID, messageID);
 			const nameTarget = global.data.userName.get(targetID) || await Users.getNameUser(targetID);
@@ -268,6 +246,7 @@ module.exports.run = async ({ event, api, args, Users, getText }) => {
 
 		case "info":
 		case "-i": {
+			if(event.type == "message_reply") { targetID = event.messageReply.senderID }
 			if (!global.data.allUserID.includes(targetID)) return api.sendMessage(getText("IDNotFound", "[ Info User ]"), threadID, messageID);
 			if (global.data.commandBanned.has(targetID)) { var commandBanned = global.data.commandBanned.get(targetID) || [] };
 			if (global.data.userBanned.has(targetID)) { var { reason, dateAdded } = global.data.userBanned.get(targetID) || {} };
