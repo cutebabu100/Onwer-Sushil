@@ -2,7 +2,7 @@ module.exports.config = {
   name: "hack",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "John Lester",
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
   description: "hack",
   commandCategory: "hack",
   usages: "@mention",
