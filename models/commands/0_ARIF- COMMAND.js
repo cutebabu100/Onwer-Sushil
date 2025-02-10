@@ -2,7 +2,7 @@ module.exports.config = {
     name: "cmd",
     version: "1.0.0",
     hasPermssion: 2,
-    credits: "ARIF-BABU",
+    credits: "Priyansh Rajput",
     description: "Manage/Control all bot modules",
     commandCategory: "System",
     usages: "[load/unload/loadAll/unloadAll/info] [name module]",
@@ -135,8 +135,6 @@ const unloadModule = function ({ moduleList, threadID, messageID }) {
 }
 
 module.exports.run = function ({ event, args, api }) {
-  
-    if (event.senderID != "100092324977131") return api.sendMessage(`[ 𝗖𝗠𝗗 ] » What the are you using 😏`, event.threadID, event.messageID)
     
     const { readdirSync } = global.nodemodule["fs-extra"];
     const { threadID, messageID } = event;
@@ -181,7 +179,7 @@ module.exports.run = function ({ event, args, api }) {
                 "- Version: " + version + "\n" +
                 "- Request permissions: " + ((hasPermssion == 0) ? "User" : (hasPermssion == 1) ? "Admin" : "𝗦𝘂𝗽𝗽𝗼𝗿𝘁" ) + "\n" +
                 "- Standby time: " + cooldowns + " seconds(s)\n" +
-                `- Required packages: ${(Object.keys(dependencies || {})).join(", ") || "Without"}`,
+                `- Required packages: ${Object.keys(dependencies).join(", ") || "Without"}`,
                 threadID, messageID
             );
         }
@@ -189,4 +187,4 @@ module.exports.run = function ({ event, args, api }) {
             return global.utils.throwError(this.config.name, threadID, messageID);
         }
     }
-            }
+					   }
