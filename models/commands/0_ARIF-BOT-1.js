@@ -232,7 +232,7 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
      return api.sendMessage("__🥰  𝐌𝐀𝐈𝐍 𝐓𝐎 𝐑𝐀𝐃𝐇𝐀 𝐑𝐀𝐍𝐈 𝐊𝐀 𝐃𝐄𝐄𝐖𝐀𝐍𝐀 𝐇𝐔 𝐏𝐘𝐀𝐑 𝐒𝐄 𝐁𝐎𝐋𝐎 𝐑𝐀𝐃𝐇𝐄 𝐑𝐀𝐃𝐇𝐄 😍 ❤️",threadID);
    };
 
-if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalamu alaikum")) {
+   if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalamu alaikum")) {
      return api.sendMessage("Walekum assalam", threadID);
    };
 
@@ -308,6 +308,30 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
      return api.sendMessage("मेरी जान पहले . लगाओ", threadID);
    };
 
+      if ((event.body.toLowerCase() == "ek kisi tu udhaar de de") || (event.body.toLowerCase() == "kiss me") || (event.body.toLowerCase() == "kiss de") || (event.body.toLowerCase() == "chuma de")) {
+     return api.sendMessage("हट पगले मम्मी मरेगी 🙈😒😕😾", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "🤮") || (event.body.toLowerCase() == "🤮🤮")) {
+     return api.sendMessage("कोनसा महीना चल रहा है। 🙂🤟", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "🙈") || (event.body.toLowerCase() == "🙈🙈")) {
+     return api.sendMessage("अले बाप ले मेली बाबू शर्मा गई 😅😅👈", threadID);
+   };
+
+   if ((event.body.toLowerCase() == "boss hu tera") || (event.body.toLowerCase() == "Boss hu tera sale") || (event.body.toLowerCase() == "boss hu tera janu") || (event.body.toLowerCase() == "boss ki bezti kr raha sale")) {
+     return api.sendMessage("सॉरी प्रिंस बॉस माफ कर दो अब नहीं करूंगा 🥺🥺🥺🙏", threadID);
+   };
+ 
+   if ((event.body.toLowerCase() == "🥴") || (event.body.toLowerCase() == "🥴🥴")) {
+     return api.sendMessage("️ चल भाग नशेड़ी 🤨🤟", threadID);
+   };
+   
+   if ((event.body.toLowerCase() == "baby love me") || (event.body.toLowerCase() == "love") || (event.body.toLowerCase() == "koi piyar nhi karta")) {
+     return api.sendMessage("️Me huna baby mere pass aao 🥰🤗. Me karunga na aapko payar 🙈 (londo tum dur hi rahna saalo 😑)", threadID);
+   };
+   
    if ((event.body.toLowerCase() == "😶😶") || (event.body.toLowerCase() == "😶")) {
      return api.sendMessage("𝐀𝐑𝐄  𝐀𝐑𝐄  𝐋𝐈𝐏𝐒  𝐊𝐀𝐇𝐀  𝐆𝐀𝐘𝐄  𝐆𝐅/𝐁𝐅  𝐊𝐄  𝐒𝐀𝐓𝐇  𝐊𝐈𝐒𝐒  𝐊𝐀𝐑𝐓𝐄  𝐓𝐈𝐌𝐄  𝐔𝐒𝐈  𝐍𝐄  𝐓𝐎  𝐍𝐀𝐇𝐈  𝐊𝐇𝐀  𝐋𝐈𝐘𝐄 😛😜🤪", threadID);
    };
