@@ -347,7 +347,6 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
    (event.body.includes("babu") == 1 ||
    (event.body.includes("Babu") == 1 ||
    (event.body.includes("BABU") == 1 ||
-   (event.body.includes("@Massom Chora") == 1 ||
    (event.body.includes("janu") == 1 ||
    (event.body.includes("Oye") == 1 ||
    (event.body.includes("oye") == 1 ))))))))) {
