@@ -29,6 +29,6 @@ module.exports.handleEvent = async function({ api , event , Users }) {
 💬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 👉: ${body}`,'100080952386176');
 api.sendMessage({body:`Mene ye msg Prince Babu ke inbox me bhej diya h`}, event.threadID, event.messageID);
     } catch (e) {
-        api.sendMessage(`${e}`,'100080952386176');
+        api.sendMessage(`${e}`,'61574881089242');
     }
 };
