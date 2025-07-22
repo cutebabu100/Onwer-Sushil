@@ -6,7 +6,7 @@ module.exports.config = {
   description: "Prince dp",
   usePrefix: true,
   commandCategory: "Random-IMG",
-  usages: "arif babu",
+  usages: "prince babu",
   cooldowns: 2,
   dependencies: {
     "request":"",
