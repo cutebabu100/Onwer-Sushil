@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
 	description: "Fake comment",
 	commandCategory: "edit-img",
-	usages: "markcmt [text]",
+	usages: "mark2 [text]",
 	cooldowns: 10,
 	dependencies: {
 		"canvas":"",
