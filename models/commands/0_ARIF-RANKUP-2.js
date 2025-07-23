@@ -1,9 +1,9 @@
 module.exports.config = {
         name: "rankup",
-        version: "7.3.1",
+        version: "7.6.8",
         hasPermssion: 1,
-        credits: "ARIF BABU",
-        description: "Announce rankup for each group, user",
+        credits: "Kreysh",
+        description: "Announce rankup for each group/user @hiramin ko muna to kreysh thanks ",
         commandCategory: "Edit-IMG",
         dependencies: {
                 "fs-extra": ""
@@ -18,7 +18,7 @@ module.exports.handleEvent = async function({ api, event, Currencies, Users, get
   const fs = global.nodemodule["fs-extra"];
   const axios = global.nodemodule["axios"];
   let pathImg = __dirname + "/noprefix/rankup/rankup.png";
-  let pathAvt1 = __dirname + "/cache/avtmot.png";
+  let pathAvt1 = __dirname + "/cache/Avtmot.png";
   var id1 = event.senderID;
 
 
@@ -52,13 +52,30 @@ module.exports.handleEvent = async function({ api, event, Currencies, Users, get
                 const moduleName = this.config.name;
 
     var background = [
-  "https://i.imgur.com/tVCXB0q.jpeg",
-  "https://i.imgur.com/JBYox72.jpeg",
-  "https://i.imgur.com/SRRuSRk.jpeg",   "https://i.imgur.com/qhx5HLz.jpeg",
-  "https://i.imgur.com/kbB4AfZ.jpeg",
-  "https://i.imgur.com/9oxlszW.jpeg",
-  "https://i.imgur.com/cJj8LTu.jpeg",   "https://i.imgur.com/LHb5eJt.jpeg",
-
+  "https://i.ibb.co/DffbB7x/2-7-BDCACE.png",
+  "https://i.ibb.co/606p1ZF/1-C0-CF112.png",
+  "https://i.ibb.co/54b5KY6/3-10100-BC.png",
+  "https://i.ibb.co/4RHd3mM/4-AB4-CF2-B.png",
+  "https://i.ibb.co/7WHKF0H/9-498-C5-E0.png",
+  "https://i.ibb.co/nPfY3HN/8-ADA7767.png",
+  "https://i.ibb.co/Ldctgw4/5-49-F92-DC.png",
+  "https://i.ibb.co/J29hdFW/6-EB49-EF4.png",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
   ];
     var rd = background[Math.floor(Math.random() * background.length)];
     let getAvtmot = (
@@ -82,7 +99,7 @@ module.exports.handleEvent = async function({ api, event, Currencies, Users, get
     let ctx = canvas.getContext("2d");
     ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
     ctx.rotate(-25 * Math.PI / 180);
-    ctx.drawImage(baseAvt1, 40, 710, 630, 700);
+    ctx.drawImage(baseAvt1, 90, 330, 340, 340);
     const imageBuffer = canvas.toBuffer();
     fs.writeFileSync(pathImg, imageBuffer);
     fs.removeSync(pathAvt1);
@@ -102,12 +119,13 @@ module.exports.languages = {
                 "levelup": "🌸 𝗞𝗶̃ 𝗻𝗮̆𝗻𝗴 𝘅𝗮̣𝗼 𝗹𝗼̂̀𝗻𝗻 𝗼̛̉ 𝗺𝗼̂𝗻 𝗽𝗵𝗮́𝗽 𝗵𝗮̂́𝗽 𝗱𝗶𝗲̂𝗺 𝗰𝘂̉𝗮 {name} 𝘃𝘂̛̀𝗮 𝗹𝗲̂𝗻 𝘁𝗼̛́𝗶 𝗹𝗲𝘃𝗲𝗹 {level} 🌸"
         },
         "en": {
-    "on": "on",
-    "off": "off",
-    "successText": "success notification rankup!",
-    "levelup": "✧═══•❁•DIL KI BAAT•❁•═══✧ {level}",
-  }
+                "on": "on",
+                "off": "off",
+                "successText": "success notification rankup!",
+                "levelup": "{name}, ✧═══•❁•DIL KI BAAT•❁•═══✧  level {level}",
+        }
 }
+
 module.exports.run = async function({ api, event, Threads, getText }) {
         const { threadID, messageID } = event;
         let data = (await Threads.getData(threadID)).data;
@@ -118,4 +136,4 @@ module.exports.run = async function({ api, event, Threads, getText }) {
         await Threads.setData(threadID, { data });
         global.data.threadData.set(threadID, data);
         return api.sendMessage(`${(data["rankup"] == true) ? getText("on") : getText("off")} ${getText("successText")}`, threadID, messageID);
-                    }
+}
