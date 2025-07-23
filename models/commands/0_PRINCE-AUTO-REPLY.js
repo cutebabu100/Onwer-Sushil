@@ -1,5 +1,5 @@
 const emojiResponses = {
-  "golu beta": {
+  "ritik beta": {
     "OWNER": [
       "Han papa  🥺",
       "Papa g ap kaha the 😀",
