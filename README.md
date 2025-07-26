@@ -9,7 +9,7 @@
 [![Facebook](https://img.shields.io/badge/Facebook-green?style=for-the-badge&logo=facebook)](https://www.facebook.com/profile.php?id=61553634015672&mibextid=kFxxJD)
 [![Instagram](https://img.shields.io/badge/Instagram-purple?style=for-the-badge&logo=instagram)](😃)
 
-![Image](https://i.ibb.co/MphKKHp/image.jpg)
+![Image](https://i.ibb.co/B5V8hrcr/278608f9f434a69e3a0f30145ca12a91.jpg)
 
 
 ## NPM INSTALL 
