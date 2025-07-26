@@ -33,7 +33,7 @@ try {
   var id = Object.keys(event.mentions)[0] || event.senderID;
   const canvas = Canvas.createCanvas(960, 634);
 	const ctx = canvas.getContext('2d');
-	const background = await Canvas.loadImage('https://i.imgur.com/brK0Hbb.jpg');
+	const background = await Canvas.loadImage('https://i.ibb.co/RpMNRGjn/brK0Hbb.jpg');
   
 	var avatar = await request.get(`https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`);
 	avatar = await this.circle(avatar.body);
