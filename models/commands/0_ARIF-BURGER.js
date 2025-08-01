@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("BURGER")==0 || event.body.indexOf("Burger")==0 || event.body.indexOf("burger")==0 || event.body.indexOf("Barger")==0) {
 		var msg = {
-				body: "💝 YE LO BBY BURGER KHAO 🍔\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿..𝐏𝐫𝐢𝐧𝐜𝐞❤️-)",
+				body: "💝 ये लो बेबी बर्गर खाओ 🍔\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿..𝐒𝐮𝐬𝐡𝐢𝐥❤️-)",
 				attachment: 
 fs.createReadStream(__dirname + `/ARIF-BABU/BURGER.jpg`)
 			}
