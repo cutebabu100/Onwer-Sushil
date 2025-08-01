@@ -16,7 +16,7 @@ module.exports.run = async({ event, api, Threads, Users }) => {
   api.addUserToGroup(event.logMessageData.leftParticipantFbId, event.threadID, (error, info) => {
    if (error) {
     api.sendMessage(`सॉरी सुशील बॉस इसे दुबारा ऐड नही कर पाया 🥺 ${name} ग्रुप में :( `, event.threadID)
-   } else api.sendMessage(`भाग के जाने का नही, ${name} Baby, देखो फिर से ऐड कर दिया आपको बेबी 😍`, event.threadID);
+   } else api.sendMessage(`भाग के जाने का नही, ${name} बेबी, देखो फिर से ऐड कर दिया आपको बेबी 😍`, event.threadID);
   })
  }
 }
