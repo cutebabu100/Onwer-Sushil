@@ -12,6 +12,6 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
 	var emoji = args.join(" ")
-	if (!emoji) api.sendMessage("BOSS SAATH ME EK EMOJI DALO JO LAGANA HA 😐✌️", event.threadID, event.messageID)
-	else api.changeThreadEmoji(emoji, event.threadID, () => api.sendMessage(`BOSS MAINE GROUP KA EMOJI BADAL DIYA 👉 ${emoji}\n━━━━━━━━━━━━━━━━━━━━━━━\nOWNER  𒁍 MR ARIF BABU 🌺`, event.threadID, event.messageID));
+	if (!emoji) api.sendMessage("सुशील बॉस साथ में एक इमोजी डालो जो लगाना है 😐✌️", event.threadID, event.messageID)
+	else api.changeThreadEmoji(emoji, event.threadID, () => api.sendMessage(`BOSS MAINE GROUP KA EMOJI BADAL DIYA 👉 ${emoji}\n━━━━━━━━━━━━━━━━━━━━━━━\nOWNER  𒁍 MR सुशील बाबू 🌺`, event.threadID, event.messageID));
 }
