@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("GOLGAPPE")==0 || event.body.indexOf("Golgap")==0 || event.body.indexOf("golgap")==0 || event.body.indexOf("Panipuri")==0) {
 		var msg = {
-				body: "💝 YE LO BBY GOLGAPPE KHAO 😋\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿..𝐏𝐫𝐢𝐧𝐜𝐞❤️-)",
+				body: "💝 YE LO BBY GOLGAPPE KHAO 😋\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿..𝐒𝐮𝐬𝐡𝐢𝐥❤️-)",
 				attachment: 
 fs.createReadStream(__dirname + `/ARIF-BABU/GOLGAPE.jpg`)
 			}
