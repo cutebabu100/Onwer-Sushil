@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("dudh")==0 || event.body.indexOf("DUDH")==0 || event.body.indexOf("DHUD")==0 || event.body.indexOf("Dudh")==0) {
 		var msg = {
-				body: "😋𝐘𝐄 𝐋𝐎 𝐁𝐀𝐁𝐘 𝐃𝐔𝐃𝐇😋🤟\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝐌𝐑.. 𝐏𝐫𝐢𝐧𝐜𝐞❤️-)",
+				body: "😋𝐘𝐄 𝐋𝐎 𝐁𝐀𝐁𝐘 𝐃𝐔𝐃𝐇😋🤟\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝐌𝐑..𝐒𝐮𝐬𝐡𝐢𝐥❤️-)",
 				attachment: fs.createReadStream(__dirname + `/noprefix/rankup/dudh.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
