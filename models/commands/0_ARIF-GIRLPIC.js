@@ -102,6 +102,6 @@ const fs = global.nodemodule["fs-extra"];
 "",
 "https://i.imgur.com/aV4WVsq.jpg"
      ];
-     var callback = () => api.sendMessage({body:`𝐌𝐀𝐃𝐄 𝐁𝐘𝐄 𝐌𝐑.. 𝐏𝐑𝐈𝐍𝐂𝐄 ❢`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+     var callback = () => api.sendMessage({body:`𝐌𝐀𝐃𝐄 𝐁𝐘𝐄 𝐌𝐑.. 𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ❢`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
