@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("Jai shree mahadev")==0 || event.body.indexOf("Jay shri mahakal")==0 || event.body.indexOf("jai mahakal")==0 || event.body.indexOf("jai shiv bholenat")==0) {
+  if (event.body.indexOf("Jai shree mahadev")==0 || event.body.indexOf("har har mahadev")==0 || event.body.indexOf("jai mahakal")==0 || event.body.indexOf("jay bholenath")==0) {
     var msg = {
         body: "जय श्री महादेव _🚩🚩🚩🙏",
         attachment: 
