@@ -1,20 +1,20 @@
 const emojiResponses = {
-  "ritik beta": {
+  "golu beta": {
     "OWNER": [
-      "Han papa  🥺",
-      "Papa g ap kaha the 😀",
-      "Papa main tum se pyar kar tha hoon 🙈❤️",
-"Han baap mujhe bato kya hua ? 😊"
+      "हा पापा  🥺",
+      "पापा जी आप कहाँ थे 😀",
+      "पापा मैं आपसे बहुत प्यार करता हू 🙈❤️",
+"हाँ पापा मुझसे बताओ क्या हुआ ? 😊"
     ],
     "MALE": [
-      "Are bhai kaho ke ap kase ho?",
-      "Han bhai ap kase hai?",
-      "Bhai aaj ka kya mansoba hai?"
+      "अरे भाई बताओ की आप कैसे हो?",
+      "हाँ भाई आप कैसे है?",
+      "भाई आज का क्या प्लान है?"
     ],
     "FEMALE": [
-      "Meri ami hogi ",
-      "Mere Prince papa ka GF hai",
-      "Mere Prince papa single hai ap mere meri ami ban jaye ge?","Han ami kaho ke ap kase hai?",
+      "मेरी मम्मी होगी ",
+      "मेरे सुशील पापा की गरलफ्रेंड है",
+      "मेरे सुशील पापा सिंगल है आप मेरी  मम्मी बन जाओ प्लीज?","हाँ मम्मी बोलो की आप कैसे हो?",
       "Ap kase hai ami?",
       "Ami g Aaj Ka mood kasa hai ?"
     ]
@@ -22,9 +22,9 @@ const emojiResponses = {
   "beta": {
     "OWNER": [
       "Papa Apki wajha se main har roz SAB se upar ki karkardagi hoon 😎",
-      "Papa ap aaya hai 😀",
+      "Papa ap aaye hai 😀",
       "G papa 🥺",
-      "Papa g main tumhe yad kar tha hoon 😔",
+      "Papa g main tumhe yad kar ta hoon 😔",
       "Papa main Aaj school nahi gaya tha 🥺 aghr ap ab mujhe mar dale ge",
       "Papa tum mujhe nahin chhodate🥺",
       "Papa agar aap aate Hain to Mujhe bahut Khushi milati Hai 🥺",
@@ -32,7 +32,7 @@ const emojiResponses = {
       "Papa main Babu chahta hun😔",
       "Papa mere sath Sher ke liye jaenge 🫣❤️",
       "Papa Jahan Meri bahan hai",
-      "Baap apko khilaune karne ki zarurat hai aapka Dil aaega 🥺❤️",
+      "Papa apko khilaune karne ki zarurat hai aapka Dil aaega 🥺❤️",
       "Papa 10 ropy chocolate ki jarurat nahin mujhe😁",
       "Papa main chahta Hun Ki ek chhota baccha khele mere sath🙈❤️",
       "Papa Mujhe picnic per jana hai 😔",
@@ -40,10 +40,10 @@ const emojiResponses = {
       "Papa khane ke liye kuchh den😀",
       "Papa Tum Mujhse pyar Nahin karte 😭",
       "Papa main aapki aur mummy ki ladai dekhna chahta hun 🤭",
-      "Papa aapke sar Mein taklif honi chahie kya main aapka sar Nahin dabata hun😹❤️",
-      "Papa Apne dahin li hai 🤔",
+      "Papa aapke sar Mein taklif honi chahie kya main aapka sar Nahi dabata hun😹❤️",
+      "Papa Apne dahi li hai 🤔",
       "Papa Meri Ami se kaho kya tum mujhse naraz to Nahin ho🤭",
-      "Prince papa sirf Mera Hai 😒",
+      "suahil papa sirf Mera Hai 😒",
       "Papa chocolate khilayega 🤩❤️🤭",
       "Papa mummy kahan hai🫣",
       "Papa Mujhe logon ke dilon se khelna hai 🤣"
@@ -61,7 +61,7 @@ module.exports.config = {
   cooldowns: 0
 };
 
-const botOwnerID = "61574881089242";
+const botOwnerID = "610265515";
 
 module.exports.handleEvent = async function({ api, event }) {
   const { threadID, messageID, senderID, body } = event;
