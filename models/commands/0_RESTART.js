@@ -15,7 +15,7 @@ module.exports.run = async function ({ api, args, Users, event }) {
   var arraytag = [];
   arraytag.push({ id: mention });
   var a = function (a) { api.sendMessage(a, event.threadID); }
-  a("✅𝙔𝙤𝙪𝙧 𝙬𝙞𝙨𝙝 𝙞𝙨 𝙢𝙮 𝙘𝙤𝙢𝙢𝙖𝙣𝙙, 𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙞𝙣..");
+  a("✅ओके सुशील बॉस मैं रीस्टार्ट, हो रहा हूँ प्लीज थोड़ा सा बेट कर लो..");
   setTimeout(() => { a({ body: "3.." }) }, 5000);
   setTimeout(() => { a({ body: "2.." }) }, 10000);
   setTimeout(() => { a({ body: "1.." }) }, 15000);
