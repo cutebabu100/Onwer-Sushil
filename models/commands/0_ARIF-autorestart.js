@@ -42,7 +42,7 @@ var timeRestart24 = `24:00:${seconds}`
 if ((timeNow == timeRestart1 || timeNow == timeRestart2 || timeNow == timeRestart3|| timeNow == timeRestart4|| timeNow == timeRestart5|| timeNow == timeRestart6 || timeNow == timeRestart7|| timeNow == timeRestart8 || timeNow == timeRestart9 || timeNow == timeRestart10 || timeNow == timeRestart11 || timeNow == timeRestart12 || timeNow == timeRestart13 || timeNow == timeRestart14 || timeNow == timeRestart15 || timeNow == timeRestart16) && seconds < 6 ) {
   for( let ad of idad) {
 setTimeout(() =>
-        api.sendMessage(`🔄 | 𝖬𝖺𝗌𝗍𝖾𝗋, ⟬𝐏𝐑𝐈𝐍𝐂𝐄 𝐌𝐄𝐆𝐇𝐖𝐀𝐍𝐒𝐈☆𝐏𝐑𝐎𝐉𝐄𝐂𝐓⟭  ${global.config.BOTNAME} 𝖻𝗈𝗍 𝗐𝗂𝗅𝗅 𝗇𝗈𝗐 𝗉𝗋𝗈𝖼𝖾𝖾𝖽 𝗍𝗈 𝗋𝖾𝖻𝗈𝗈𝗍\n\n🕐 | 𝗧𝗶𝗺𝗲: ${timeNow}`,ad, () =>process.exit(1)), 1000);
+        api.sendMessage(`🔄 | 𝖬𝖺𝗌𝗍𝖾𝗋, ⟬𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕☆𝐏𝐑𝐎𝐉𝐄𝐂𝐓⟭  ${global.config.BOTNAME} 𝖻𝗈𝗍 𝗐𝗂𝗅𝗅 𝗇𝗈𝗐 𝗉𝗋𝗈𝖼𝖾𝖾𝖽 𝗍𝗈 𝗋𝖾𝖻𝗈𝗈𝗍\n\n🕐 | 𝗧𝗶𝗺𝗲: ${timeNow}`,ad, () =>process.exit(1)), 1000);
   }
   }
 }
